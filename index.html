@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ben's Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
     <nav class="navbar">
@@ -32,11 +35,6 @@
                     Projects
                     </a>
                 </li>
-                <li class="navbar__button">
-                    <a href="/" class="button">
-                    Sign Up
-                    </a>
-                </li>
             </ul>
         </div>
     </nav>
@@ -44,7 +42,8 @@
 	<div class="main">
 		<div class="main__container">
 			<div class="main__content">
-				<h1>About Me</h1>
+				<button class="btn about me">About Me</button>
+                <button class="btn projects">Projects</button>
 				<p>See what makes me different.</p>
 				<button class="main__btn"><a href="/">Get Started</a></button>
 			</div>
@@ -53,6 +52,30 @@
 			</div>
 		</div>
 	</div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+        <section class="social__media">
+            <div class="social__media--wrap">
+                <div class="footer__logo">
+                    <a href="/" id="footer__logo"><i class="fas
+                        fa-gem"></i>Ben</a>
+                </div>
+                <p class="website__right">© Ben Wasden 2023. All rights reserved</p>
+                <div class="social__icons">
+                    <a href="/" class="social__icon--link" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/benwasden/" class="social__icon--link" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="/" class="social__icon--link" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
 	<script src = "app.js"></script>
 </body>
 </html>
