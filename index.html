@@ -27,37 +27,75 @@
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item">
-                    <a href="/" class="navbar__links">
+                    <a href="#top" class="navbar__links">
                     Home
                     </a>
                 </li>
                 <li class="navbar__item">
-                    <a href="about.html" class="navbar__links">
+                    <a href="#about" class="navbar__links">
                     About Me
                     </a>
                 </li>
                 <li class="navbar__item">
-                    <a href="tech.html" class="navbar__links">
+                    <a href="/" class="navbar__links">
                     Projects
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="resume/BenWasdenResume.docx" class="navbar__links" id="resume__links" download="Ben Wasden Resume">
+                    Download CV
                     </a>
                 </li>
             </ul>
         </div>
     </nav>
 	<!-- Hero Secion -->
-	<div class="main">
+	<div class="main" id="top">
 		<div class="main__container">
 			<div class="main__content">
-				<button class="btn about me"><a href="about.html">About Me</a></button>
+				<p id="main__paragraph">Hi, I'm Ben.</p>
+				<button class="btn about me"><a href="#about">About Me</a></button>
                 <button class="btn projects">Projects</button>
-				<p>See what makes me different.</p>
-				<button class="main__btn"><a href="/">Get Started</a></button>
 			</div>
 			<div class="main__img--container">
 				<img src="images/image1.svg" alt="pic" id="main__img">
 			</div>
 		</div>
 	</div>
+
+    <!-- About Section -->
+    <div class="about__container" id="about">
+        <div class="about__row">
+            <div class="about__col1">
+                <img src="images/Personal_Image.JPG">
+            </div>
+            <div class="about__col2">
+                <h1 class="sub__title">About Me</h1>
+                <p>Write a paragraph about me</p>
+                <div class="tab__titles">
+                    <p class="tab__links active__link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab__links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab__links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab__contents active__tab" id="skills">
+                    <ul>
+                        <li><span>Skill1</span><br>Skill1 Description</li>
+                    </ul>
+                </div>
+                <div class="tab__contents" id="experience">
+                    <ul>
+                        <li><span>Willson Labs</span><br>Undergraduate Research Assistant</li>
+                        <li><span>University of Texas at </span></li>
+                    </ul>
+                </div>
+                <div class="tab__contents" id="education">
+                    <ul>
+                        <li><span>2021-Current</span><br>The University of Texas at Austin</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer Section -->
     <div class="footer__container">
