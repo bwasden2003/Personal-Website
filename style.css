@@ -35,7 +35,7 @@
     text-align: center;
 }
 
-#navbar__logo {
+.navbar__logo {
     background-color: #ff8177;
     background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
     background-size: 100%;
@@ -373,6 +373,12 @@
 	font-size: 2rem;
 }
 
+#footer__img {
+	filter: invert(94%) sepia(6%) saturate(0%) hue-rotate(69deg) brightness(105%) contrast(109%);
+	height: 15%;
+	width: 15%;
+}
+
 /* Social Icons */
 .social__icon--link {
 	color: #fff;
@@ -412,7 +418,7 @@
 	margin-bottom: 16px;
 }
 
-.website__rights {
+.website__right {
 	color: #fff;
 }
 

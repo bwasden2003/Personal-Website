@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ben's Website</title>
     <link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/dfb5fcb1ab.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
         integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet" />
@@ -13,7 +14,12 @@
 <body>
     <nav class="navbar">
         <div class="navbar__container">
-            <a href="/" id="navbar__logo">Ben's Logo</a>
+			<div class="navbar__logo">
+				<a href="/" id="navbar__link">
+					<i class="fa-solid fa-user-secret"></i>
+					Ben Codes
+				</a>
+			</div>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -26,12 +32,12 @@
                     </a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/about.html" class="navbar__links">
+                    <a href="about.html" class="navbar__links">
                     About Me
                     </a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/tech.html" class="navbar__links">
+                    <a href="tech.html" class="navbar__links">
                     Projects
                     </a>
                 </li>
@@ -42,7 +48,7 @@
 	<div class="main">
 		<div class="main__container">
 			<div class="main__content">
-				<button class="btn about me">About Me</button>
+				<button class="btn about me"><a href="about.html">About Me</a></button>
                 <button class="btn projects">Projects</button>
 				<p>See what makes me different.</p>
 				<button class="main__btn"><a href="/">Get Started</a></button>
@@ -57,10 +63,7 @@
     <div class="footer__container">
         <section class="social__media">
             <div class="social__media--wrap">
-                <div class="footer__logo">
-                    <a href="/" id="footer__logo"><i class="fas
-                        fa-gem"></i>Ben</a>
-                </div>
+                <a href="/" id="footer__logo"><i class="fa-solid fa-user-secret"></i>Ben Codes</a>
                 <p class="website__right">© Ben Wasden 2023. All rights reserved</p>
                 <div class="social__icons">
                     <a href="/" class="social__icon--link" target="_blank" aria-label="Instagram">
