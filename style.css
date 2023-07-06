@@ -339,20 +339,22 @@ html {
 .about__row {
 	display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 }
 
 .about__col1 {
+	margin-left: 8rem;
 	flex-basis: 35%;
 }
 
 .about__col1 img {
-	width: 100%;
+	width: 80%;
 	border-radius: 15px;
 }
 
 .about__col2 {
 	flex-basis: 60%;
+	padding-left: 5rem;
 }
 
 .sub__title {
