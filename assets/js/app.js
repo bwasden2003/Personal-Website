@@ -20,3 +20,16 @@ function opentab(tabname) {
 	event.currentTarget.classList.add("active__link")
 	document.getElementById(tabname).classList.add("active__tab")
 }
+
+/*== Projects Swiper ==*/
+let swiper = new Swiper('.projects__container', {
+	cssMode: true,
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev'
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+});
