@@ -1,6 +1,6 @@
 /*==================== VARIABLES CSS ====================*/
 :root {
-	--header-height: 3rem;
+	--header-height: 80px;
 
 	/*========== Colors ==========*/
 	/* Change favorite color */
@@ -62,12 +62,12 @@
 }
 
 html {
+	height: 100%;
 	scroll-behavior: smooth;
 }
 
 body {
 	margin: 0 0 var(--header-height) 0;
-	font-family: var(--body-font);
 	font-size: var(--normal-font-size);
 	background-color: var(--body-color);
 	color: var(--text-color);
@@ -322,7 +322,7 @@ img {
 .projects {
 	background-color: #070e33;
 	margin: 0 auto;
-	height: 90vh;
+	height: 100vh;
 }
 
 .section__title {
@@ -364,9 +364,20 @@ img {
 	color: #fff;
 }
 
+
+.projects__demo {
+	border: 1px solid white;
+	margin: 1rem;
+	padding: 2rem 2rem;
+	display: flex;
+}
+
 .projects__description {
-    margin-top: .75rem;
-	margin-bottom: .75rem;
+	flex: 1;
+	text-align: left;
+	font-size: 1.25rem;
+	margin-right: 1rem;
+	color: #fff;
 }
 
 .demo__button {
@@ -374,7 +385,7 @@ img {
 	padding: 1rem;
 	border: 2px solid;
 	border-radius: .5rem;
-	margin-top: 15px;
+	margin-top: 1rem;
 	margin-bottom: 1rem;
 	transition: all 0.35s;
 	color: #fff;
@@ -422,11 +433,14 @@ img {
 /* Footer CSS */
 .footer__container {
 	background-color: #070e33;
-	padding: 5rem 0;
+	margin-top: auto;
+	margin-bottom: 0;
+	padding: 5rem 0rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	border: 2px thick white;
 }
 
 #footer__logo {
