@@ -33,3 +33,20 @@ let swiper = new Swiper('.projects__container', {
 		clickable: true,
 	},
 });
+
+/*== Videos ==*/
+document.getElementById('chess_project').addEventListener('click', function() {
+	// Show video container
+	document.getElementById('videoContainer').style.display = 'block';
+
+	// Play the video
+	document.getElementById('demoVideo').play();
+});
+
+document.getElementById('lfa_project').addEventListener('click', function() {
+	// Show video container
+	document.getElementById('videoContainer').style.display = 'block';
+
+	// Play the video
+	document.getElementById('demoVideo').play();
+});
