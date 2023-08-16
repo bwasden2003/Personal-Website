@@ -35,18 +35,71 @@ let swiper = new Swiper('.projects__container', {
 });
 
 /*== Videos ==*/
-document.getElementById('chess_project').addEventListener('click', function() {
-	// Show video container
-	document.getElementById('videoContainer').style.display = 'block';
+document.addEventListener('DOMContentLoaded', function() {
+	const videoButtons = document.querySelectorAll('.demo__button');
+	const videoContainer = document.querySelector('.video__container'); // Global video container
+	const videoPlayer = videoContainer.querySelector('video');
 
-	// Play the video
-	document.getElementById('demoVideo').play();
+	videoButtons.forEach(btn => {
+		btn.addEventListener('click', function() {
+			// Get video path from the data attribute of the clicked button
+			const videoSrc = btn.getAttribute('data-video-src');
+
+			// Update the video source, load it, display the overlay, and play the video
+			videoPlayer.querySelector('source').src = videoSrc;
+			videoPlayer.load();
+			videoContainer.style.display = 'flex';
+			videoPlayer.play();
+		});
+	});
+
+	document.querySelectorAll('.video__container').forEach(container => {
+		container.addEventListener('click', function(e) {
+			const videoPlayer = container.querySelector('video');
+			
+			if (!videoPlayer.contains(e.target)) {
+				console.log("closing video")
+				container.style.display = 'none';
+				header
+				videoPlayer.pause();
+			}
+		});
+
+		container.querySelector('video').addEventListener('click', function(e) {
+			e.stopPropagation();
+		});
+	});
 });
 
-document.getElementById('lfa_project').addEventListener('click', function() {
-	// Show video container
-	document.getElementById('videoContainer').style.display = 'block';
 
-	// Play the video
-	document.getElementById('demoVideo').play();
-});
+// document.getElementById('lfa__project__button').addEventListener('click', function() {
+//     const videoOverlay = document.getElementById('lfa__video__container');
+//     const videoPlayer = document.getElementById('lfa__video__player');
+
+//     videoOverlay.style.display = 'flex';
+//     videoPlayer.play();
+// });
+
+// document.getElementById('lfa__video__container').addEventListener('click', function(e) {
+//     if(e.target === this) {
+//         const videoPlayer = document.getElementById('lfa__video__player');
+//         this.style.display = 'none';
+//         videoPlayer.pause();
+//     }
+// });
+
+// document.getElementById('chess__project__button').addEventListener('click', function() {
+//     const videoOverlay = document.getElementById('chess__video__container');
+//     const videoPlayer = document.getElementById('chess__video__player');
+
+//     videoOverlay.style.display = 'flex';
+//     videoPlayer.play();
+// });
+
+// document.getElementById('chess__video__container').addEventListener('click', function(e) {
+//     if(e.target === this) {
+//         const videoPlayer = document.getElementById('chess__video__player');
+//         this.style.display = 'none';
+//         videoPlayer.pause();
+//     }
+// });
