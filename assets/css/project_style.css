@@ -69,8 +69,11 @@ html {
 body {
 	margin: 0 0 var(--header-height) 0;
 	font-size: var(--normal-font-size);
-	background-color: var(--body-color);
+	background-color: #070e33;
 	color: var(--text-color);
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 h1, h2, h3, h4 {
@@ -323,6 +326,7 @@ img {
 	background-color: #070e33;
 	margin: 0 auto;
 	height: 100vh;
+	flex: 1;
 }
 
 .section__title {
@@ -452,8 +456,6 @@ video {
 /* Footer CSS */
 .footer__container {
 	background-color: #070e33;
-	margin-top: auto;
-	margin-bottom: 0;
 	padding: 5rem 0rem;
 	display: flex;
 	flex-direction: column;
