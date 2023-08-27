@@ -222,7 +222,7 @@ html {
 .btn {
 	border: none;
 	background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
-	line-height: 45px;
+	line-height: 55px;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	padding: 14px 28px;
