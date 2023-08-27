@@ -120,7 +120,6 @@ img {
 .grid {
 	display: grid;
 	grid-gap: 1.5rem;
-	border: 1px solid #fff;
 }
 
 .header {
@@ -370,7 +369,6 @@ img {
 
 
 .projects__demo {
-	border: 1px solid white;
 	margin: 1rem;
 	padding: 2rem 2rem;
 	display: flex;
@@ -384,10 +382,16 @@ img {
 	color: #fff;
 }
 
+.projects__description__alt {
+	flex: 1;
+	text-align: left;
+	font-size: 1.25rem;
+	color: #fff;
+}
+
 .demo__button {
 	background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
 	padding: 1rem;
-	border: 2px solid;
 	border-radius: .5rem;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
@@ -461,7 +465,6 @@ video {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	border: 2px thick white;
 }
 
 #footer__logo {
